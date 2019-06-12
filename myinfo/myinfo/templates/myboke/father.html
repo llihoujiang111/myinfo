@@ -1,0 +1,130 @@
+<!doctype html>
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>{% block title %}
+
+  {% endblock %}</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="icon" type="image/png" href="{% static 'assets/i/favicon.png' %}">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="{% static 'assets/i/app-icon72x72@2x.png' %}">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="{% static 'assets/i/app-icon72x72@2x.png' %}">
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+  <link rel="stylesheet" href="{% static 'assets/css/amazeui.min.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/app.css' %}">
+</head>
+
+<body id="blog-article-sidebar">
+<!-- header start -->
+<header class="am-g am-g-fixed blog-fixed blog-text-center blog-header">
+    <div class="am-u-sm-8 am-u-sm-centered">
+        <img width="200" src="{% static 'myimg/starlu.png' %}" alt="Amaze UI Logo"/>
+        <h2 class="am-hide-sm-only">In_Your_Eyes Personal Homepage</h2>
+    </div>
+</header>
+<!-- header end -->
+<hr>
+
+<!-- nav start -->
+<nav class="am-g am-g-fixed blog-fixed blog-nav">
+<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only blog-button" data-am-collapse="{target: '#blog-collapse'}" ><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="blog-collapse">
+    <ul class="am-nav am-nav-pills am-topbar-nav">
+      <li><a href="{% url '个人:首页' %}">看别的</a></li>
+{#      <li class="am-dropdown" data-am-dropdown>#}
+{#        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">#}
+{#          点一下 <span class="am-icon-caret-down"></span>#}
+{#        </a>#}
+{#        <ul class="am-dropdown-content">#}
+{#          <li><a href="lw-index.html">1. 正常模式</a></li>#}
+{#          <li><a href="lw-index-nosidebar.html">2. 阅读模式</a></li>#}
+{#          <li><a href="">3. 简洁模式</a></li>#}
+{##}
+{#        </ul>#}
+{#      </li>#}
+{#      <li><a href="lw-article.html">要不要看呢</a></li>#}
+      <li><a href="{% url '个人:照片' %}">全是图片</a></li>
+      <li><a href="{% url '个人:展示列表' %}">阅读列表</a></li>
+      <li><a href="{% url '个人:时光' %}">时间轴</a></li>
+    </ul>
+    <form class="am-topbar-form am-topbar-right am-form-inline" role="search">
+      <div class="am-form-group">
+        <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+      </div>
+    </form>
+  </div>
+</nav>
+<!-- nav end -->
+<hr>
+{% block contentHead %}
+
+{% endblock %}
+<!-- content srart -->
+{% block content %}
+
+{% endblock %}
+<!-- content end -->
+{% block contentFoot %}
+
+{% endblock %}
+
+ <footer class="blog-footer">
+    <div class="am-g am-g-fixed blog-fixed am-u-sm-centered blog-footer-padding">
+        <div class="am-u-sm-12 am-u-md-4- am-u-lg-4">
+            <h3>说点什么吧</h3>
+            <p class="am-text-sm">人生就是一场未知目的地的旅行。<br> 很多时候，我们并不知道自己接下来会遇见怎样的未来。 <br> 只不过有时候，我们只是一味的狂奔，却忘记了旅行的意义!<br>嗯嗯嗯，不知道说啥了。外面的世界真精彩<br><br>
+            讲个笑话吧! 从前啊有个人啊! 哈哈哈哈哈哈哈哈哈哈!!!!!!!!!!!!! To be continued...</p>
+        </div>
+        <div class="am-u-sm-12 am-u-md-4- am-u-lg-4">
+            <h3>社交账号</h3>
+            <p>
+                <a href="https://user.qzone.qq.com/1017864911"><span class="am-icon-qq am-icon-fw am-primary blog-icon blog-icon"></span></a>
+                <a href="https://github.com/llihoujiang111"><span class="am-icon-github am-icon-fw blog-icon blog-icon"></span></a>
+                <a href="https://weibo.com/5631509270/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1"><span class="am-icon-weibo am-icon-fw blog-icon blog-icon"></span></a>
+                <a href="https://www.baidu.com"><span class="am-icon-reddit am-icon-fw blog-icon blog-icon"></span></a>
+                <a href="https://wx.qq.com/"><span class="am-icon-weixin am-icon-fw blog-icon blog-icon"></span></a>
+            </p>
+            <h3>Life</h3>
+            <p>时光，是停留还是不停留？记忆，是长的还是短的？一条河里的水，是新的还是旧的？每一片繁花似锦，轮回过几次 ?</p>
+        </div>
+        <div class="am-u-sm-12 am-u-md-4- am-u-lg-4">
+              <h1>给时光以生命，而不是给生命以时光.</h1>
+             <h3>Times</h3>
+            <p>
+                <ul>
+                    <li>Years</li>
+                    <li>Months</li>
+                    <li>Days</li>
+                    <li>Hours </li>
+                    <li>Seconds</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="blog-text-center">© Even Those Who Are In Hell Will Be Glad To See The Sunshine Again</div>
+  </footer>
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="{% static 'assets/js/amazeui.min.js' %}"></script>
+<!-- <script src="assets/js/app.js"></script> -->
+</body>
+</html>

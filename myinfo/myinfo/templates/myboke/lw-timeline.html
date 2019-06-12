@@ -1,0 +1,28 @@
+{% extends 'myboke/father.html' %}
+{% block content %}
+<!-- content srart -->
+<div class="am-g am-g-fixed blog-fixed blog-content">
+    <div class="am-u-sm-12">
+        <h1 class="blog-text-center">-- 存档 --</h1>
+        <div class="timeline-year">
+            <h1>2015</h1>
+            <hr>
+                <ul>
+{#                <h3>10月</h3>#}
+                <hr>
+                    {% for foo in artall %}
+                <li>
+                    <span class="am-u-sm-4 am-u-md-2 timeline-span">{{ foo.create_time }}</span>
+                    <span class="am-u-sm-8 am-u-md-6"><a href="{% url '个人:展示' foo.pk %}">{{ foo.article_name }}</a></span>
+                    <span class="am-u-sm-4 am-u-md-2 am-hide-sm-only">凌晨四点钟</span>
+                    <span class="am-u-sm-4 am-u-md-2 am-hide-sm-only">{{ foo.article_author }}</span>
+                </li>
+                    {% endfor %}
+                </ul>
+        </div>
+    </div>
+
+
+</div>
+<!-- content end -->
+{% endblock %}

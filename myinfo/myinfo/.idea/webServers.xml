@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b99e6e72-ba1d-4f79-bc01-1f8e6922f07a" name="myinfor" url="http://47.97.199.234">
+        <fileTransfer host="47.97.199.234" port="22" rootFolder="/djangoapps/myselfdj/project" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
